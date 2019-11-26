@@ -1,0 +1,19 @@
+body {
+    height: 100vh;
+}
+
+form {
+    width: 30vw;
+    background: lightgray;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+input {
+    margin: 5px;
+    padding: 3px;;
+}
+
+input[type="input"] {
+    text-align: right;
+}

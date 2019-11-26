@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Изучение JS</title>
+
+    <link href="css/stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Основы языка программирования JavaScript</h1>
+    <p> При решении каждого задания необходимо предусмотреть проверку корректности исходных данных.
+        При работе с массивами и строками, по возможности, использовать встроенные методы.</p>
+
+    <p>В шестом задании под процедурой понимается функция; эту задачу нужно решить тремя способами:
+        <ul>
+            <li>с помощью обычной функции</li>
+            <li>с помощью функционального выражения</li>
+            <li>с помощью стрелочной функции</li>
+        </ul>
+    </p>
+
+    <p>Одиннадцатую задачу нужно решить двумя способами:
+        <ul>
+            <li>с помощью ООП в прототипном стиле</li>
+            <li>с помощью нового синтаксиса для классов</li>
+        </ul>
+    </p>
+
+    <h3>Задание 1</h3>
+    <p>Даны стороны прямоугольника <code>a</code> и <code>b</code>.
+        Найти его площадь <code>S = a·b</code> и периметр <code>P = 2·(a + b)</code>.</p>
+    <button class="start" type="submit" onclick="ex1()">Запуск</button>
+    <form id="form_1">
+        <label for="form_1__sideA">Сторона <code>a</code></label>
+        <input type="number" name="sideA" id="form_1__sideA">
+        <label for="form_1__sideB">Сторона <code>b</code></label>
+        <input type="number" name="sideB" id="form_1__sideB">
+        <br>
+        <label for="form_1__surface">Площадь <code>S</code></label>
+        <input type="number" name="surface" id="form_1__surface" readonly>
+        <label for="form_1__perimeter">Периметр <code>P</code></label>
+        <input type="number" name="perimeter" id="form_1__perimeter" readonly>
+        <br>
+        <input type="submit" name="calc" id="form_1__submit" value="Рассчитать">
+        <input type="reset">
+    </form>
+
+    <h3>Задание 2</h3>
+    <p> Даны три целых числа. Найти количество положительных чисел в исходном наборе.</p>
+    <button class="start" type="submit" onclick="ex2()">Запуск</button>
+
+    <h3>Задание 3</h3>
+    <p>Дано целое число в диапазоне <code>1-7</code>.
+        <br>Вывести строку — название дня недели, соответствующее данному числу (1 — «понедельник», 2 — «вторник» и
+        т.д.).</p>
+    <button class="start" type="submit" onclick="ex3()">Запуск</button>
+
+    <h3>Задание 4</h3>
+    <p>Даны целые числа <code>K</code> и <code>N (N > 0)</code>. Вывести <code>N</code> раз число <code>K</code></p>
+    <button class="start" type="submit" onclick="ex4()">Запуск</button>
+
+    <h3>Задание 5</h3>
+    <p>Даны положительные числа <code>A</code> и <code>B (A > B)</code>.
+        <br>На отрезке длины A размещено максимально возможное количество отрезков длины <code>B</code> (без
+        наложений).
+        <br>Не используя операции умножения и деления, найти длину незанятой части отрезка A.</p>
+    <button class="start" type="submit" onclick="ex5()">Запуск</button>
+
+    <h3>Задание 6</h3>
+    <p>Описать функцию <code>Sign(X)</code> целого типа, возвращающую для числа <code>X</code> следующие значения:<br>
+        <code>−1,    если X < 0;        0,    если X = 0;        1,    если X > 0.</code><br>
+        С помощью этой функции найти значение выражения <code>Sign(A) + Sign(B)</code> для данных чисел
+        <code>A и B</code>.
+    </p>
+    <button class="start" type="submit" onclick="ex6_regular()">Запуск</button>
+    <button class="start" type="submit" onclick="ex6_expression()">Запуск</button>
+    <button class="start" type="submit" onclick="ex6_arrow()">Запуск</button>
+
+    <h3>Задание 7</h3>
+    <p> Дано целое число <code>N</code> и набор из <code>N</code> чисел. Найти минимальный и максимальный из элементов
+        данного набора и вывести их в указанном порядке.
+    </p>
+    <button class="start" type="submit" onclick="ex7()">Запуск</button>
+
+    <h3>Задание 8</h3>
+    <p> Дано целое число <code>N (> 1)</code>, а также первый член <code>A</code> и разность <code>D</code>
+        арифметической прогрессии.
+        <br>Сформировать и вывести массив размера <code>N</code>, содержащий <code>N</code> первых членов данной
+        прогрессии:
+        <br><code>A,    A + D,    A + 2·D,    A + 3·D,    … .</code>
+    </p>
+    <button class="start" type="submit" onclick="ex8()">Запуск</button>
+
+    <h3>Задание 9</h3>
+    <p>Дан массив <code>A</code> размера <code>N</code> и целое число <code>K (1 ≤ K ≤ N)</code>.
+        <br>Преобразовать массив, увеличив каждый его элемент на исходное значение элемента A<sub>K</sub></p>
+    <button class="start" type="submit" onclick="ex9()">Запуск</button>
+
+    <h3>Задание 10</h3>
+    <p>Дана строка. Подсчитать количество содержащихся в ней цифр.</p>
+    <button class="start" type="submit" onclick="ex10()">Запуск</button>
+
+    <h3>Задание 11</h3>
+    <p>Разработать класс, описывающий круг.</p>
+    <p><i>Поля</i>:
+        <ul>
+            <li>координаты точки центра круга <code>x, y</code>;</li>
+            <li>радиус <code>R</code>;</li>
+            <li>площадь <code>S</code>;</li>
+            <li>периметр <code>P</code></li>
+        </ul>
+    </p>
+    <p>
+        <i>Методы:</i>
+        <ul>
+            <li>конструктор: присвоение нулевых значений полям класса</li>
+            <li>ввод пользователем значений координат точки центра круга и радиуса;</li>
+            <li>вычисление и вывод на экран значения площади круга;</li>
+            <li>вычисление и вывод на экран значения периметра круга;</li>
+            <li>определение, лежит ли внутри круга точка, координаты которой вводит пользователь.</li>
+        </ul>
+    </p>
+    <button class="start" type="submit" onclick="ex11__object()">Запуск (Класс как объект)</button>
+    <button class="start" type="submit" onclick="ex11__class()">Запуск (Класс как класс)</button>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
