@@ -1,0 +1,35 @@
+body {
+    font-size: 16px;
+    line-height: 1.5em;
+    width: 80vw;
+    margin: auto;
+}
+
+header {
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    line-height: 1.6em;
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+code {
+    padding: 1px 4px;
+    border-radius: 2px;
+    background-color: lightgray;
+}
+
+input {
+    margin: 5px;
+    padding: 3px;
+}
