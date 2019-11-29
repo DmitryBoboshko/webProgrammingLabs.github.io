@@ -7,27 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Задание 1</title>
 
-    <link href="css/tasks_stylesheet.css" rel="stylesheet">
+    <link href="css/stylesheet_t1.css" rel="stylesheet">
 </head>
 
 <body>
     <form name="registry" onsubmit="return addMessage()">
-        <label for="name">Имя</label>
-        <input type="text" name="name" id="name" required>
-        <br>
-        <label for="group">Группа</label>
-        <input type="text" name="group" id="group" required>
-        <br>
-        <label for="hobby">Хобби</label>
-        <input type="text" name="hobby" id="hobby" required>
-        <br>
-        <label for="tel">Телефон</label>
-        <input type="tel" name="tel" id="tel" pattern="8[0-9]{10}" placeholder="89991231234" minlength="11" maxlength="11" required>
-        <br>
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" required><br>
+            <label for="group">Группа</label>
+            <input type="text" name="group" id="group" required><br>
+            <label for="hobby">Хобби</label>
+            <input type="text" name="hobby" id="hobby" required><br>
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" pattern="8[0-9]{10}" placeholder="89991231234" minlength="11" maxlength="11" required><br>
         <!-- <input type="button" onclick="addMessage()" name="submit" value="Добавить"> -->
         <input type="submit" value="Записать">
         <input type="reset">
     </form>
+
+    <footer>
+        <a href="index.html">Вернуться на главную</a>
+    </footer>
 
     <script src="js/task_1.js"></script>
 </body>

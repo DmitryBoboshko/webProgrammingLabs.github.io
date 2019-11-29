@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+}
+
+.text-block {
+    vertical-align: top;
+    display: inline-block;
+    width: 25vw;
+    margin: 10px;
+    padding: 10px;
+    background: lightgray;
+    border-radius: 10px;
+}
+
+.text-block > h2 {
+    text-align: center;
+    padding: 5px;
+    background: lightyellow;
+    border-radius: 10px;
+}
+
+.text-block > p {
+    text-align: left;
+}
+
+.hide {
+    display: none;
+}
+
+.unhide {
+    display: inline;
+    text-align: left;
+}
+
+footer {
+    margin-top: 30px;
+}
