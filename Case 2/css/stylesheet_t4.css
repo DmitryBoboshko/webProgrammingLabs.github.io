@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    background-color: snow;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.5em;
+    line-height: 2.5em;
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    display: none;
+    background-color: lightcyan;
+    width: 100%;
+}
+
+.menu.open ul {
+    display: block;
+}
+
+.menu ul li {
+    padding-bottom: 5px;
+}
+

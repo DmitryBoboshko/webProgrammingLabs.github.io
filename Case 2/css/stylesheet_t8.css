@@ -1,0 +1,52 @@
+body {
+    text-align: center;
+    align-items: center;
+}
+
+.carousel {
+    width: 1070px;
+    height: 80vh;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+}
+
+.carousel .arrow {
+    display: inline-block;
+    width: 50%;
+    height: 35px;
+    padding: 0;
+    border: none;
+    font-size: inherit;
+}
+
+.carousel .arrow:hover {
+    background-color: lightgray;
+}
+
+.carousel .carousel_string {
+    width: 1070px;
+    max-height: 75vh;
+    overflow: hidden;
+}
+
+.carousel ul {
+    position: relative;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    width: max-content;
+    list-style: none;
+    font-size: 0;
+    transition: all 200ms ease;
+}
+
+.carousel li {
+    display: inline-block;
+    width: 1070px;
+}
+
+.carousel img {
+    width: inherit;
+}
+

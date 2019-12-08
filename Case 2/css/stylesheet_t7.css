@@ -1,0 +1,23 @@
+body {
+    /* height: 85vh; */
+    text-align: center;
+    align-items: center;
+}
+
+/* #sprite {
+    height: 86px;
+    width: 50px;
+    background: url('../img/sonic.png');
+    background-attachment: local;
+    background-size: 3710%;
+    background-position-y: -128px;
+    background-position-x: -38px;
+    margin: 30vh auto;
+} */
+
+.slides {
+    padding-bottom: 50%;
+    background: url('../img/slides.png') center center;
+    background-repeat: repeat-x;
+    background-size: cover;
+}
