@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Задание 1</title>
+</head>
+
+<body>
+    <h1>Задание 1</h1>
+    <h2>Техническое задание</h2>
+    <p class="task-description">Создать веб-страницу с формой для введения пользователем данных в соответствии с
+        вариантом. Разработать
+        PHP-сценарий, который отображает извлеченные из формы данные в окне браузера. Данные должны передаваться методом
+        GET.</p>
+    <form action="">
+        <fieldset>
+            <legend>Ваш отзыв о наших услугах</legend>
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name">
+            <label for="age">Ваш возраст</label>
+            <select name="age" id="age">
+                <option value="1">менее 20</option>
+                <option value="1">20 и более</option>
+            </select>
+
+            <fieldset class="inner-fieldset">
+                <legend>Ваш пол</legend>
+                <label for="male">Мужской</label>
+                <input type="radio" name="sex" id="male" value="Мужской">
+                <label for="female">Женский</label>
+                <input type="radio" name="sex" id="female" value="Женский">
+            </fieldset>
+
+            <fieldset class="inner-fieldset">
+                <legend>Ваши интересы</legend>
+                <div>
+                    <input type="checkbox" name="interests" id="comp" value="Компьютеры">
+                    <label for="comp">Компьютеры</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interests" id="sport" value="Спорт">
+                    <label for="sport">Спорт</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interests" id="science" value="Наука">
+                    <label for="science">Наука</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interests" id="art" value="Искусство">
+                    <label for="art">Искусство</label>
+                </div>
+            </fieldset>
+
+            <label for="opinion">Ваше мнение</label>
+            <textarea name="opinion" id="opinion"></textarea>
+
+            <input type="submit" value="Отправить"><input type="reset" value="Очистить форму">
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
