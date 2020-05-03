@@ -1,3 +1,4 @@
-Лабораторные работы по веб-программированию
+### Лабораторные работы по веб-программированию
+Знакомство с JS и решение простых задач.
 
-[Заходи, смотри](https://dmitryboboshko.github.io/webProgrammingLabs.github.io)
+[Ознакомиться](https://dmitryboboshko.github.io/webProgrammingLabs.github.io)
